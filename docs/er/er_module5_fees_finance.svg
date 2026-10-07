@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1146" height="792" viewBox="0 0 1146 792" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="34" font-size="19" font-weight="700" fill="#0f172a">Module 5 — Fees &amp; Finance</text>
+<text x="36" y="54" font-size="11.5" fill="#64748b">Fee structures generate student bills; sp_process_fee_payment posts a payment, issues a receipt and updates the bill inside one transaction; triggers audit every change.</text>
+<line x1="36" y1="64" x2="1110" y2="64" stroke="#cbd5e1" stroke-width="1"/>
+<g>
+<path d="M246.0 153.0 L285.0 153.0 L285.0 193.0 L324.0 193.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 147.0 L256 159.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 193.0 L312 188.0 M324 193.0 L312 198.0 M324 193.0 L312 193.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="231.0" y="164.0" width="108" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="285.0" y="176.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">generates bill</text>
+</g>
+<g>
+<path d="M900.0 397.0 L717.0 397.0 L717.0 193.0 L534.0 193.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 391.0 L890 403.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M534 193.0 L546 188.0 M534 193.0 L546 198.0 M534 193.0 L546 193.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="680.5" y="286.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="717.0" y="298.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">billed to</text>
+</g>
+<g>
+<path d="M534.0 193.0 L573.0 193.0 L573.0 177.0 L612.0 177.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M544 187.0 L544 199.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M612 177.0 L600 172.0 M612 177.0 L600 182.0 M612 177.0 L600 177.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="543.5" y="176.0" width="59" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="188.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">paid by</text>
+</g>
+<g>
+<path d="M900.0 397.0 L861.0 397.0 L861.0 177.0 L822.0 177.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 391.0 L890 403.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M822 177.0 L834 172.0 M822 177.0 L834 182.0 M822 177.0 L834 177.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M534.0 193.0 L573.0 193.0 L573.0 429.0 L612.0 429.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M544 187.0 L544 199.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M612 429.0 L600 424.0 M612 429.0 L600 434.0 M612 429.0 L600 429.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="540.0" y="302.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="314.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">late fee</text>
+</g>
+<g>
+<path d="M717.0 278.0 L717.0 413.0 L717.0 413.0 L717.0 548.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M711.0 268 L723.0 268" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M717.0 548 L712.0 560 M717.0 548 L722.0 560 M717.0 548 L717.0 560" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="684.0" y="404.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="717.0" y="416.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">refunded</text>
+</g>
+<g>
+<path d="M246.0 633.0 L285.0 633.0 L285.0 625.0 L324.0 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 627.0 L256 639.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 625.0 L312 620.0 M324 625.0 L312 630.0 M324 625.0 L312 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="255.5" y="620.0" width="59" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="285.0" y="632.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">awarded</text>
+</g>
+<g>
+<path d="M900.0 397.0 L717.0 397.0 L717.0 625.0 L534.0 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 391.0 L890 403.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M534 625.0 L546 620.0 M534 625.0 L546 630.0 M534 625.0 L546 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="684.0" y="502.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="717.0" y="514.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">benefits</text>
+</g>
+<g>
+<path d="M534.0 193.0 L717.0 193.0 L717.0 145.0 L900.0 145.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M534 193.0 L546 188.0 M534 193.0 L546 198.0 M534 193.0 L546 193.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 139.0 L890 151.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="680.5" y="160.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="717.0" y="172.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">rolled up</text>
+</g>
+<g>
+<path d="M717.0 278.0 L717.0 413.0 L1005.0 413.0 L1005.0 548.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M717.0 278 L712.0 266 M717.0 278 L722.0 266 M717.0 278 L717.0 266" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M999.0 558 L1011.0 558" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="824.5" y="404.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="861.0" y="416.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">rolled up</text>
+</g>
+<g>
+<rect x="36" y="76" width="210" height="154" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M36 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="141.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">fee_structures</text>
+<text x="46" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">fee_structure_id</text>
+<text x="46" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">                </text>
+<text x="46" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">program_id</text>
+<text x="46" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">semester_no</text>
+<text x="46" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="46" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">component</text>
+<text x="46" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="46" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">due_date</text>
+</g>
+<g>
+<rect x="324" y="76" width="210" height="234" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M324 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="429.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">student_fees</text>
+<text x="334" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_fee_id</text>
+<text x="334" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">              </text>
+<text x="334" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="334" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">fee_structure_id</text>
+<text x="334" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+<text x="334" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="334" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_amount</text>
+<text x="334" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">scholarship_amount</text>
+<text x="334" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">fine_amount</text>
+<text x="334" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">paid_amount</text>
+<text x="334" y="266" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">due_amount</text>
+<text x="334" y="282" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+<text x="334" y="298" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">due_date</text>
+</g>
+<g>
+<rect x="612" y="76" width="210" height="202" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M612 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="717.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">payments</text>
+<text x="622" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">payment_id</text>
+<text x="622" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="622" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">receipt_no</text>
+<text x="622" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">transaction_id</text>
+<text x="622" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_fee_id</text>
+<text x="622" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="622" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">payment_mode</text>
+<text x="622" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">payment_date</text>
+<text x="622" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+<text x="622" y="266" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">received_by</text>
+</g>
+<g>
+<rect x="612" y="344" width="210" height="170" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M612 350 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="717.0" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">fines</text>
+<text x="622" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">fine_id</text>
+<text x="622" y="393" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">       </text>
+<text x="622" y="406" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="422" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_fee_id</text>
+<text x="622" y="438" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">fine_type</text>
+<text x="622" y="454" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">reason</text>
+<text x="622" y="470" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="622" y="486" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">imposed_on</text>
+<text x="622" y="502" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="612" y="548" width="210" height="154" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M612 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="717.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">refunds</text>
+<text x="622" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">refund_id</text>
+<text x="622" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">         </text>
+<text x="622" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">payment_id</text>
+<text x="622" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="622" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">reason</text>
+<text x="622" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">refund_mode</text>
+<text x="622" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="36" y="548" width="210" height="170" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M36 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="141.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">scholarships</text>
+<text x="46" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">scholarship_id</text>
+<text x="46" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">              </text>
+<text x="46" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">scholarship_code</text>
+<text x="46" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">name</text>
+<text x="46" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">provider</text>
+<text x="46" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">scholarship_type</text>
+<text x="46" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="46" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_percentage</text>
+<text x="46" y="706" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">max_beneficiaries</text>
+</g>
+<g>
+<rect x="324" y="548" width="210" height="154" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M324 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="429.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">student_scholarships</text>
+<text x="334" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_scholarship_id</text>
+<text x="334" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">                      </text>
+<text x="334" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="334" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">scholarship_id</text>
+<text x="334" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="334" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="334" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">sanctioned_on</text>
+<text x="334" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="900" y="344" width="210" height="106" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.4"/>
+<path d="M900 350 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.4"/>
+<text x="1005.0" y="362" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a">students</text>
+<text x="910" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_id</text>
+<text x="910" y="393" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="910" y="406" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="910" y="422" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">first_name</text>
+<text x="910" y="438" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">last_name</text>
+</g>
+<g>
+<rect x="900" y="76" width="210" height="138" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M900 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="1005.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">v_student_fee_status (view)</text>
+<text x="910" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">student_id</text>
+<text x="910" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_billed</text>
+<text x="910" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_paid</text>
+<text x="910" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_due</text>
+<text x="910" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">overdue_bills</text>
+<text x="910" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">overall_fee_status</text>
+</g>
+<g>
+<rect x="900" y="548" width="210" height="106" rx="6" fill="#ffffff" stroke="#15803d" stroke-width="1.4"/>
+<path d="M900 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dcfce7" stroke="#15803d" stroke-width="1.4"/>
+<text x="1005.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#15803d">v_daily_fee_collection (view)</text>
+<text x="910" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">payment_date</text>
+<text x="910" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">receipts</text>
+<text x="910" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">collected</text>
+<text x="910" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">payment_mode</text>
+</g>
+<text x="36" y="766" font-size="10" fill="#64748b"># primary key   ~ foreign key   1── one   &lt;── many   - - - identifying/weak relationship   ·  University ERP · M7 BATCH · Dept. of E&amp;TCE</text>
+</svg>

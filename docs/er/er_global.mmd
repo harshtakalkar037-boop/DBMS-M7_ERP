@@ -1,0 +1,320 @@
+erDiagram
+    USERS {
+        string user_id PK
+        string role_id FK
+        string email
+        string password_hash
+        string is_active
+        date last_login_at
+    }
+    ROLES {
+        string role_id PK
+        string role_code
+        string role_name
+    }
+    DEPARTMENTS {
+        string department_id PK
+        string department_code
+        string name
+        string hod_faculty_id FK
+    }
+    STUDENTS {
+        string student_id PK
+        string user_id FK
+        string roll_number
+        string department_id FK
+        string program_id FK
+        string batch_id FK
+        decimal current_semester_no
+        string status
+    }
+    FACULTY {
+        string faculty_id PK
+        string user_id FK
+        string employee_code
+        string department_id FK
+        string designation_id FK
+        decimal basic_salary
+        string status
+    }
+    PROGRAMS {
+        string program_id PK
+        string program_code
+        string name
+        string department_id FK
+        string total_semesters
+    }
+    SUBJECTS {
+        string subject_id PK
+        string subject_code
+        string name
+        string credits
+        string department_id FK
+    }
+    COURSE_OFFERINGS {
+        string offering_id PK
+        string subject_id FK
+        string faculty_id FK
+        string program_id FK
+        string semester_id FK
+        int enrolled_count
+        string capacity
+    }
+    ENROLLMENTS {
+        string enrollment_id PK
+        string student_id FK
+        string offering_id FK
+        string grade
+        decimal grade_points
+        string status
+    }
+    TIMETABLE {
+        string timetable_id PK
+        string offering_id FK
+        string faculty_id FK
+        string day_of_week
+        string start_time
+        string end_time
+        string room_number
+    }
+    ADMISSIONS {
+        string admission_id PK
+        int application_no
+        string program_id FK
+        string entrance_score
+        date application_date
+        string status
+    }
+    GUARDIANS {
+        string guardian_id PK
+        string student_id FK
+        string name
+        string relation
+        string phone
+    }
+    CLASS_SESSIONS {
+        string session_id PK
+        string offering_id FK
+        string faculty_id FK
+        date session_date
+        int session_no
+        string status
+    }
+    ATTENDANCE {
+        string attendance_id PK
+        string session_id FK
+        string student_id FK
+        string offering_id FK
+        string status
+        string marked_by
+    }
+    EXAMS {
+        string exam_id PK
+        string exam_code
+        string exam_type
+        string semester_id FK
+        string min_attendance_required
+        string status
+    }
+    EXAM_SCHEDULES {
+        string schedule_id PK
+        string exam_id FK
+        string subject_id FK
+        date exam_date
+        string start_time
+        string room_number
+    }
+    EXAM_REGISTRATIONS {
+        string registration_id PK
+        string exam_id FK
+        string student_id FK
+        string offering_id FK
+        decimal attendance_percentage
+        string is_eligible
+        int hall_ticket_no
+    }
+    MARKS {
+        string mark_id PK
+        string registration_id FK
+        string marks_obtained
+        string grade
+        decimal grade_points
+        string is_absent
+    }
+    RESULTS {
+        string result_id PK
+        string student_id FK
+        string semester_id FK
+        decimal sgpa
+        decimal cgpa
+        int backlog_count
+    }
+    FEE_STRUCTURES {
+        string fee_structure_id PK
+        string program_id FK
+        int semester_no
+        decimal amount
+        string component
+    }
+    STUDENT_FEES {
+        string student_fee_id PK
+        string student_id FK
+        string fee_structure_id FK
+        decimal total_amount
+        decimal paid_amount
+        decimal due_amount
+        string status
+    }
+    PAYMENTS {
+        string payment_id PK
+        int receipt_no
+        string student_fee_id FK
+        string student_id FK
+        decimal amount
+        string payment_mode
+        string status
+    }
+    SCHOLARSHIPS {
+        string scholarship_id PK
+        string scholarship_code
+        decimal amount
+        decimal is_percentage
+        string max_beneficiaries
+    }
+    STUDENT_SCHOLARSHIPS {
+        string student_scholarship_id PK
+        string student_id FK
+        string scholarship_id FK
+        decimal amount
+        string status
+    }
+    HOSTELS {
+        string hostel_id PK
+        string hostel_code
+        string name
+        string hostel_type
+        string warden_faculty_id FK
+    }
+    ROOMS {
+        string room_id PK
+        string hostel_id FK
+        string block_id FK
+        string room_number
+        string capacity
+        int occupied_count
+    }
+    BEDS {
+        string bed_id PK
+        string room_id FK
+        string bed_code
+        string status
+    }
+    HOSTEL_APPLICATIONS {
+        string application_id PK
+        int application_no
+        string student_id FK
+        string hostel_id FK
+        string status
+    }
+    ROOM_ALLOCATIONS {
+        string allocation_id PK
+        string student_id FK
+        string bed_id FK
+        string room_id FK
+        string hostel_id FK
+        decimal rent_amount
+        string status
+    }
+    FACULTY_LEAVES {
+        string leave_id PK
+        string faculty_id FK
+        string leave_type
+        date start_date
+        int days
+        string status
+        string approved_by FK
+    }
+    LEAVE_BALANCES {
+        string balance_id PK
+        string faculty_id FK
+        string leave_type
+        string allotted
+        string used
+    }
+    PAYROLLS {
+        string payroll_id PK
+        string faculty_id FK
+        string pay_month
+        date pay_year
+        decimal gross_salary
+        decimal net_salary
+        string status
+    }
+    PAYROLL_COMPONENTS {
+        string component_id PK
+        string payroll_id FK
+        string component_type
+        decimal amount
+    }
+    NOTIFICATIONS {
+        string notification_id PK
+        string user_id FK
+        string title
+        string type
+        string is_read
+    }
+    AUDIT_LOGS {
+        string id PK
+        string actor_user_id FK
+        string action
+        string entity
+        int entity_id
+        string old_value
+        string new_value
+    }
+    ROLES ||--o{ USERS : "has"
+    USERS ||--|| STUDENTS : "login"
+    USERS ||--|| FACULTY : "login"
+    DEPARTMENTS ||--o{ STUDENTS : "offers"
+    DEPARTMENTS ||--o{ PROGRAMS : "relates to"
+    DEPARTMENTS ||--o{ SUBJECTS : "relates to"
+    DEPARTMENTS ||--o{ FACULTY : "employs"
+    FACULTY ||--|| DEPARTMENTS : "heads"
+    STUDENTS ||--|| ADMISSIONS : "admitted via"
+    STUDENTS ||--o{ GUARDIANS : "relates to"
+    PROGRAMS ||--o{ STUDENTS : "relates to"
+    PROGRAMS ||--o{ FEE_STRUCTURES : "priced by"
+    SUBJECTS ||--o{ COURSE_OFFERINGS : "offered as"
+    FACULTY ||--o{ COURSE_OFFERINGS : "teaches"
+    COURSE_OFFERINGS ||--o{ ENROLLMENTS : "enrols"
+    STUDENTS ||--o{ ENROLLMENTS : "relates to"
+    COURSE_OFFERINGS ||--o{ TIMETABLE : "scheduled"
+    FACULTY ||--o{ TIMETABLE : "relates to"
+    COURSE_OFFERINGS ||--o{ CLASS_SESSIONS : "meets"
+    CLASS_SESSIONS ||--o{ ATTENDANCE : "marks"
+    STUDENTS ||--o{ ATTENDANCE : "relates to"
+    STUDENTS ||--o{ EXAM_REGISTRATIONS : "registers"
+    EXAMS ||--o{ EXAM_REGISTRATIONS : "relates to"
+    EXAMS ||--o{ EXAM_SCHEDULES : "relates to"
+    COURSE_OFFERINGS ||--o{ EXAM_REGISTRATIONS : "for"
+    EXAM_REGISTRATIONS ||--|| MARKS : "scores"
+    STUDENTS ||--o{ RESULTS : "published"
+    STUDENTS ||--o{ STUDENT_FEES : "billed"
+    FEE_STRUCTURES ||--o{ STUDENT_FEES : "generates"
+    STUDENT_FEES ||--o{ PAYMENTS : "paid by"
+    STUDENTS ||--o{ PAYMENTS : "relates to"
+    SCHOLARSHIPS ||--o{ STUDENT_SCHOLARSHIPS : "awarded"
+    STUDENTS ||--o{ STUDENT_SCHOLARSHIPS : "relates to"
+    STUDENTS ||--o{ HOSTEL_APPLICATIONS : "applies"
+    HOSTELS ||--o{ HOSTEL_APPLICATIONS : "relates to"
+    HOSTELS ||--o{ ROOMS : "contains"
+    ROOMS ||--o{ BEDS : "has"
+    BEDS ||--o{ ROOM_ALLOCATIONS : "occupied by"
+    STUDENTS ||--o{ ROOM_ALLOCATIONS : "relates to"
+    FACULTY ||--|| ROOMS : "warden"
+    FACULTY ||--o{ FACULTY_LEAVES : "applies"
+    FACULTY ||--o{ LEAVE_BALANCES : "quota"
+    FACULTY ||--o{ PAYROLLS : "paid"
+    PAYROLLS ||--o{ PAYROLL_COMPONENTS : "breakup"
+    USERS ||--o{ NOTIFICATIONS : "receives"
+    USERS ||--o{ AUDIT_LOGS : "writes"

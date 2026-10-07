@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="858" height="852" viewBox="0 0 858 852" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="34" font-size="19" font-weight="700" fill="#0f172a">Module 3 — Attendance</text>
+<text x="36" y="54" font-size="11.5" fill="#64748b">A class session is the unit of teaching; attendance records one row per student per session. v_student_attendance_summary feeds the &lt;75% rule that blocks exam registration.</text>
+<line x1="36" y1="64" x2="822" y2="64" stroke="#cbd5e1" stroke-width="1"/>
+<g>
+<path d="M141.0 296.0 L141.0 239.0 L141.0 239.0 L141.0 182.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M135.0 306 L147.0 306" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M141.0 182 L136.0 170 M141.0 182 L146.0 170 M141.0 182 L141.0 170" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M612.0 129.0 L429.0 129.0 L429.0 129.0 L246.0 129.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M602 123.0 L602 135.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M246 129.0 L258 124.0 M246 129.0 L258 134.0 M246 129.0 L258 129.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M246.0 129.0 L285.0 129.0 L285.0 169.0 L324.0 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 123.0 L256 135.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 169.0 L312 164.0 M324 169.0 L312 174.0 M324 169.0 L312 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="252.0" y="140.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="285.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">conducts</text>
+</g>
+<g>
+<path d="M612.0 129.0 L573.0 129.0 L573.0 169.0 L534.0 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M602 123.0 L602 135.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M534 169.0 L546 164.0 M534 169.0 L546 174.0 M534 169.0 L546 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="550.5" y="140.0" width="45" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="152.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">takes</text>
+</g>
+<g>
+<path d="M429.0 262.0 L429.0 349.0 L429.0 349.0 L429.0 436.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M423.0 252 L435.0 252" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M429.0 436 L424.0 448 M429.0 436 L434.0 448 M429.0 436 L429.0 448" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="399.5" y="340.0" width="59" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="429.0" y="352.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">records</text>
+</g>
+<g>
+<path d="M612.0 489.0 L573.0 489.0 L573.0 521.0 L534.0 521.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M602 483.0 L602 495.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M534 521.0 L546 516.0 M534 521.0 L546 526.0 M534 521.0 L546 521.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M141.0 182.0 L141.0 309.0 L429.0 309.0 L429.0 436.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M135.0 172 L147.0 172" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M429.0 436 L424.0 448 M429.0 436 L434.0 448 M429.0 436 L429.0 448" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M429.0 606.0 L429.0 623.0 L429.0 623.0 L429.0 640.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M429.0 606 L424.0 594 M429.0 606 L434.0 594 M429.0 606 L429.0 594" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M423.0 650 L435.0 650" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="389.0" y="614.0" width="80" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="429.0" y="626.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">aggregated</text>
+</g>
+<g>
+<path d="M534.0 521.0 L573.0 521.0 L573.0 709.0 L612.0 709.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M534 521.0 L546 516.0 M534 521.0 L546 526.0 M534 521.0 L546 521.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M602 703.0 L602 715.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="533.0" y="606.0" width="80" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="618.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">aggregated</text>
+</g>
+<g>
+<rect x="36" y="76" width="210" height="106" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1.4"/>
+<path d="M36 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="141.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#7c3aed">course_offerings</text>
+<text x="46" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">offering_id</text>
+<text x="46" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">           </text>
+<text x="46" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">subject_id</text>
+<text x="46" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">faculty_id</text>
+<text x="46" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+</g>
+<g>
+<rect x="36" y="296" width="210" height="106" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="1.4"/>
+<path d="M36 302 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="141.0" y="314" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#7c3aed">subjects</text>
+<text x="46" y="342" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">subject_id</text>
+<text x="46" y="345" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="46" y="358" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">subject_code</text>
+<text x="46" y="374" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">name</text>
+<text x="46" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">credits</text>
+</g>
+<g>
+<rect x="324" y="76" width="210" height="186" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.4"/>
+<path d="M324 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+<text x="429.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#b45309">class_sessions</text>
+<text x="334" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">session_id</text>
+<text x="334" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="334" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">offering_id</text>
+<text x="334" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">faculty_id</text>
+<text x="334" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+<text x="334" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">session_date</text>
+<text x="334" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">session_no</text>
+<text x="334" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">topic</text>
+<text x="334" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_number</text>
+<text x="334" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="324" y="436" width="210" height="170" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.4"/>
+<path d="M324 442 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+<text x="429.0" y="454" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#b45309">attendance</text>
+<text x="334" y="482" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">attendance_id</text>
+<text x="334" y="485" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">             </text>
+<text x="334" y="498" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">session_id</text>
+<text x="334" y="514" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="334" y="530" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">offering_id</text>
+<text x="334" y="546" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+<text x="334" y="562" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+<text x="334" y="578" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">remarks</text>
+<text x="334" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">marked_by</text>
+</g>
+<g>
+<rect x="612" y="436" width="210" height="106" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.4"/>
+<path d="M612 442 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.4"/>
+<text x="717.0" y="454" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a">students</text>
+<text x="622" y="482" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_id</text>
+<text x="622" y="485" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="622" y="498" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="622" y="514" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">first_name</text>
+<text x="622" y="530" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">last_name</text>
+</g>
+<g>
+<rect x="612" y="76" width="210" height="106" rx="6" fill="#ffffff" stroke="#a21caf" stroke-width="1.4"/>
+<path d="M612 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#fae8ff" stroke="#a21caf" stroke-width="1.4"/>
+<text x="717.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#a21caf">faculty</text>
+<text x="622" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">faculty_id</text>
+<text x="622" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="622" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">employee_code</text>
+<text x="622" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">first_name</text>
+<text x="622" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">last_name</text>
+</g>
+<g>
+<rect x="324" y="640" width="210" height="138" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.4"/>
+<path d="M324 646 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+<text x="429.0" y="658" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#b45309">v_student_attendance_summary (view)</text>
+<text x="334" y="686" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">student_id</text>
+<text x="334" y="702" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">offering_id</text>
+<text x="334" y="718" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_classes</text>
+<text x="334" y="734" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">present_classes</text>
+<text x="334" y="750" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">attendance_percentage</text>
+<text x="334" y="766" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="612" y="640" width="210" height="138" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1.4"/>
+<path d="M612 646 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#fef3c7" stroke="#b45309" stroke-width="1.4"/>
+<text x="717.0" y="658" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#b45309">v_student_attendance_overall (view)</text>
+<text x="622" y="686" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">student_id</text>
+<text x="622" y="702" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="622" y="718" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_classes</text>
+<text x="622" y="734" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">attended_classes</text>
+<text x="622" y="750" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">overall_percentage</text>
+<text x="622" y="766" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">attendance_status</text>
+</g>
+<text x="36" y="826" font-size="10" fill="#64748b"># primary key   ~ foreign key   1── one   &lt;── many   - - - identifying/weak relationship   ·  University ERP · M7 BATCH · Dept. of E&amp;TCE</text>
+</svg>

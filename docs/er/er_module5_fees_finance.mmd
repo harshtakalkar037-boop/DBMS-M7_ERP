@@ -1,0 +1,104 @@
+erDiagram
+    FEE_STRUCTURES {
+        string fee_structure_id PK
+        string program_id FK
+        int semester_no
+        string academic_year_id FK
+        string component
+        decimal amount
+        date due_date
+    }
+    STUDENT_FEES {
+        string student_fee_id PK
+        string student_id FK
+        string fee_structure_id FK
+        string semester_id FK
+        string academic_year_id FK
+        decimal total_amount
+        decimal scholarship_amount
+        decimal fine_amount
+        decimal paid_amount
+        decimal due_amount
+        string status
+        date due_date
+    }
+    PAYMENTS {
+        string payment_id PK
+        int receipt_no
+        int transaction_id
+        string student_fee_id FK
+        string student_id FK
+        decimal amount
+        string payment_mode
+        date payment_date
+        string status
+        string received_by FK
+    }
+    FINES {
+        string fine_id PK
+        string student_id FK
+        string student_fee_id FK
+        string fine_type
+        string reason
+        decimal amount
+        date imposed_on
+        string status
+    }
+    REFUNDS {
+        string refund_id PK
+        string payment_id FK
+        string student_id FK
+        decimal amount
+        string reason
+        string refund_mode
+        string status
+    }
+    SCHOLARSHIPS {
+        string scholarship_id PK
+        string scholarship_code
+        string name
+        string provider
+        string scholarship_type
+        decimal amount
+        decimal is_percentage
+        string max_beneficiaries
+    }
+    STUDENT_SCHOLARSHIPS {
+        string student_scholarship_id PK
+        string student_id FK
+        string scholarship_id FK
+        string academic_year_id FK
+        decimal amount
+        date sanctioned_on
+        string status
+    }
+    STUDENTS {
+        string student_id PK
+        string roll_number
+        string first_name
+        string last_name
+    }
+    V_STUDENT_FEE_STATUS__VIEW_ {
+        int student_id
+        string total_billed
+        string total_paid
+        string total_due
+        string overdue_bills
+        string overall_fee_status
+    }
+    V_DAILY_FEE_COLLECTION__VIEW_ {
+        date payment_date
+        string receipts
+        string collected
+        string payment_mode
+    }
+    FEE_STRUCTURES ||--o{ STUDENT_FEES : "generates bill"
+    STUDENTS ||--o{ STUDENT_FEES : "billed to"
+    STUDENT_FEES ||--o{ PAYMENTS : "paid by"
+    STUDENTS ||--o{ PAYMENTS : "relates to"
+    STUDENT_FEES ||--o{ FINES : "late fee"
+    PAYMENTS ||--o{ REFUNDS : "refunded"
+    SCHOLARSHIPS ||--o{ STUDENT_SCHOLARSHIPS : "awarded"
+    STUDENTS ||--o{ STUDENT_SCHOLARSHIPS : "benefits"
+    STUDENT_FEES }o--|| V_STUDENT_FEE_STATUS__VIEW_ : "rolled up"
+    PAYMENTS }o--|| V_DAILY_FEE_COLLECTION__VIEW_ : "rolled up"

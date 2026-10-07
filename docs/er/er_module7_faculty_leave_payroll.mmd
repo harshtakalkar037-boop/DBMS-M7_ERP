@@ -1,0 +1,121 @@
+erDiagram
+    DESIGNATIONS {
+        string designation_id PK
+        string title
+        string grade
+    }
+    DEPARTMENTS {
+        string department_id PK
+        string department_code
+        string name
+        string hod_faculty_id FK
+    }
+    FACULTY {
+        string faculty_id PK
+        string user_id FK
+        string employee_code
+        string first_name
+        string last_name
+        string designation_id FK
+        string department_id FK
+        date joining_date
+        string employment_type
+        string qualification
+        string experience_years
+        decimal basic_salary
+        string hra
+        string da
+        string ta
+        string pf_percent
+        string status
+    }
+    FACULTY_SUBJECTS {
+        string faculty_subject_id PK
+        string faculty_id FK
+        string subject_id FK
+        string academic_year_id FK
+    }
+    SUBJECTS {
+        string subject_id PK
+        string subject_code
+        string name
+        string credits
+    }
+    FACULTY_LEAVES {
+        string leave_id PK
+        string faculty_id FK
+        string leave_type
+        date start_date
+        date end_date
+        int days
+        string reason
+        date applied_on
+        string status
+        string approved_by FK
+        string remarks
+    }
+    LEAVE_BALANCES {
+        string balance_id PK
+        string faculty_id FK
+        string academic_year_id FK
+        string leave_type
+        string allotted
+        string used
+    }
+    PAYROLLS {
+        string payroll_id PK
+        string faculty_id FK
+        string pay_month
+        date pay_year
+        string basic
+        string hra
+        string da
+        string ta
+        string special_allowance
+        decimal gross_salary
+        string pf_deduction
+        string professional_tax
+        int lop_days
+        decimal lop_amount
+        decimal net_salary
+        int working_days
+        string status
+        date paid_on
+    }
+    PAYROLL_COMPONENTS {
+        string component_id PK
+        string payroll_id FK
+        string component_type
+        string component_name
+        decimal amount
+    }
+    V_FACULTY_WORKLOAD__VIEW_ {
+        int faculty_id
+        string employee_code
+        string full_name
+        int offerings_count
+        string students_taught
+        string sessions_taken
+        string pending_leaves
+    }
+    V_FACULTY_PAYROLL_SUMMARY__VIEW_ {
+        int faculty_id
+        string employee_code
+        string payslips_issued
+        string ytd_gross
+        string ytd_net
+        string ytd_pf
+        string casual_leave_balance
+    }
+    DESIGNATIONS ||--o{ FACULTY : "holds"
+    DEPARTMENTS ||--o{ FACULTY : "employs"
+    FACULTY ||--|| DEPARTMENTS : "heads"
+    FACULTY ||--o{ FACULTY_SUBJECTS : "allotted"
+    SUBJECTS ||--o{ FACULTY_SUBJECTS : "relates to"
+    FACULTY ||--o{ FACULTY_LEAVES : "applies"
+    FACULTY ||--o{ LEAVE_BALANCES : "annual quota"
+    FACULTY_LEAVES }o--|| LEAVE_BALANCES : "consumes"
+    FACULTY ||--o{ PAYROLLS : "payslip"
+    PAYROLLS ||--o{ PAYROLL_COMPONENTS : "breakup"
+    FACULTY ||--|| V_FACULTY_WORKLOAD__VIEW_ : "summarised"
+    FACULTY ||--|| V_FACULTY_PAYROLL_SUMMARY__VIEW_ : "year-to-date"

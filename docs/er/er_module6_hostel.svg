@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1146" height="1216" viewBox="0 0 1146 1216" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="34" font-size="19" font-weight="700" fill="#0f172a">Module 6 — Hostel</text>
+<text x="36" y="54" font-size="11.5" fill="#64748b">Hostels → blocks → rooms → beds. Allocating or vacating a bed fires triggers that keep rooms.occupied_count and beds.status correct, so vacancy is never stale.</text>
+<line x1="36" y1="64" x2="1110" y2="64" stroke="#cbd5e1" stroke-width="1"/>
+<g>
+<path d="M141.0 278.0 L141.0 413.0 L141.0 413.0 L141.0 548.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M135.0 268 L147.0 268" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M141.0 548 L136.0 560 M141.0 548 L146.0 560 M141.0 548 L141.0 560" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="94.0" y="404.0" width="94" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="141.0" y="416.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">divided into</text>
+</g>
+<g>
+<path d="M246.0 177.0 L285.0 177.0 L285.0 413.0 L324.0 413.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 171.0 L256 183.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 413.0 L312 408.0 M324 413.0 L312 418.0 M324 413.0 L312 413.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M246.0 617.0 L285.0 617.0 L285.0 413.0 L324.0 413.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 611.0 L256 623.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 413.0 L312 408.0 M324 413.0 L312 418.0 M324 413.0 L312 413.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M429.0 514.0 L429.0 657.0 L429.0 657.0 L429.0 800.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M423.0 504 L435.0 504" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M429.0 800 L424.0 812 M429.0 800 L434.0 812 M429.0 800 L429.0 812" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="375.0" y="648.0" width="108" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="429.0" y="660.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">furnished with</text>
+</g>
+<g>
+<path d="M900.0 137.0 L861.0 137.0 L861.0 169.0 L822.0 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 131.0 L890 143.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M822 169.0 L834 164.0 M822 169.0 L834 174.0 M822 169.0 L834 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="831.5" y="144.0" width="59" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="861.0" y="156.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">applies</text>
+</g>
+<g>
+<path d="M246.0 177.0 L429.0 177.0 L429.0 169.0 L612.0 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 171.0 L256 183.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M612 169.0 L600 164.0 M612 169.0 L600 174.0 M612 169.0 L600 169.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M717.0 262.0 L717.0 405.0 L717.0 405.0 L717.0 548.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M711.0 252 L723.0 252" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M711.0 558 L723.0 558" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="677.0" y="396.0" width="80" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="717.0" y="408.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">approved →</text>
+</g>
+<g>
+<path d="M534.0 861.0 L573.0 861.0 L573.0 657.0 L612.0 657.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M544 855.0 L544 867.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M612 657.0 L600 652.0 M612 657.0 L600 662.0 M612 657.0 L600 657.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="540.0" y="750.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="762.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">occupies</text>
+</g>
+<g>
+<path d="M1005.0 198.0 L1005.0 373.0 L717.0 373.0 L717.0 548.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M999.0 188 L1011.0 188" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M717.0 548 L712.0 560 M717.0 548 L722.0 560 M717.0 548 L717.0 560" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M822.0 657.0 L861.0 657.0 L861.0 625.0 L900.0 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M832 651.0 L832 663.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M900 625.0 L888 620.0 M900 625.0 L888 630.0 M900 625.0 L888 625.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="838.5" y="632.0" width="45" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="861.0" y="644.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">moves</text>
+</g>
+<g>
+<path d="M822.0 657.0 L861.0 657.0 L861.0 885.0 L900.0 885.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M832 651.0 L832 663.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M900 885.0 L888 880.0 M900 885.0 L888 890.0 M900 885.0 L888 885.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="824.5" y="762.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="861.0" y="774.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">rent bill</text>
+</g>
+<g>
+<path d="M429.0 514.0 L429.0 759.0 L429.0 759.0 L429.0 1004.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M423.0 504 L435.0 504" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M423.0 1014 L435.0 1014" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="389.0" y="750.0" width="80" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="429.0" y="762.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">exposed as</text>
+</g>
+<g>
+<rect x="36" y="76" width="210" height="202" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M36 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="141.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">hostels</text>
+<text x="46" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">hostel_id</text>
+<text x="46" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">         </text>
+<text x="46" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">hostel_code</text>
+<text x="46" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">name</text>
+<text x="46" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">hostel_type</text>
+<text x="46" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">warden_faculty_id</text>
+<text x="46" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_rooms</text>
+<text x="46" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_beds</text>
+<text x="46" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">occupied_beds</text>
+<text x="46" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">rent_per_bed</text>
+<text x="46" y="266" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="36" y="548" width="210" height="138" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M36 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="141.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">hostel_blocks</text>
+<text x="46" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">block_id</text>
+<text x="46" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">        </text>
+<text x="46" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">hostel_id</text>
+<text x="46" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">block_code</text>
+<text x="46" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">name</text>
+<text x="46" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">floors</text>
+<text x="46" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="324" y="312" width="210" height="202" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M324 318 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="429.0" y="330" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">rooms</text>
+<text x="334" y="358" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">room_id</text>
+<text x="334" y="361" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">       </text>
+<text x="334" y="374" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">hostel_id</text>
+<text x="334" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">block_id</text>
+<text x="334" y="406" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_number</text>
+<text x="334" y="422" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">floor</text>
+<text x="334" y="438" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_type</text>
+<text x="334" y="454" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">capacity</text>
+<text x="334" y="470" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">occupied_count</text>
+<text x="334" y="486" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">rent_per_bed</text>
+<text x="334" y="502" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="324" y="800" width="210" height="122" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M324 806 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="429.0" y="818" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">beds</text>
+<text x="334" y="846" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">bed_id</text>
+<text x="334" y="849" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">      </text>
+<text x="334" y="862" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">room_id</text>
+<text x="334" y="878" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">bed_code</text>
+<text x="334" y="894" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+<text x="334" y="910" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">remarks</text>
+</g>
+<g>
+<rect x="612" y="76" width="210" height="186" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M612 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="717.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">hostel_applications</text>
+<text x="622" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">application_id</text>
+<text x="622" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">              </text>
+<text x="622" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">application_no</text>
+<text x="622" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">hostel_id</text>
+<text x="622" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="622" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_type_pref</text>
+<text x="622" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">applied_on</text>
+<text x="622" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+<text x="622" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">reviewed_by</text>
+</g>
+<g>
+<rect x="612" y="548" width="210" height="218" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M612 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="717.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">room_allocations</text>
+<text x="622" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">allocation_id</text>
+<text x="622" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">             </text>
+<text x="622" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">bed_id</text>
+<text x="622" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">room_id</text>
+<text x="622" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">hostel_id</text>
+<text x="622" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="622" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">allocated_on</text>
+<text x="622" y="706" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">allocated_by</text>
+<text x="622" y="722" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">vacated_on</text>
+<text x="622" y="738" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">rent_amount</text>
+<text x="622" y="754" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="900" y="548" width="210" height="154" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M900 554 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="1005.0" y="566" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">room_transfers</text>
+<text x="910" y="594" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">transfer_id</text>
+<text x="910" y="597" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">           </text>
+<text x="910" y="610" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">allocation_id</text>
+<text x="910" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">from_bed_id</text>
+<text x="910" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">to_bed_id</text>
+<text x="910" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">reason</text>
+<text x="910" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">transferred_on</text>
+<text x="910" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">approved_by</text>
+</g>
+<g>
+<rect x="900" y="800" width="210" height="170" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M900 806 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="1005.0" y="818" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">hostel_fees</text>
+<text x="910" y="846" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">hostel_fee_id</text>
+<text x="910" y="849" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">             </text>
+<text x="910" y="862" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">allocation_id</text>
+<text x="910" y="878" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="910" y="894" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="910" y="910" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">amount</text>
+<text x="910" y="926" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">paid_amount</text>
+<text x="910" y="942" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">due_date</text>
+<text x="910" y="958" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="900" y="76" width="210" height="122" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.4"/>
+<path d="M900 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.4"/>
+<text x="1005.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a">students</text>
+<text x="910" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_id</text>
+<text x="910" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="910" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="910" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">first_name</text>
+<text x="910" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">last_name</text>
+<text x="910" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">gender</text>
+</g>
+<g>
+<rect x="324" y="1004" width="210" height="138" rx="6" fill="#ffffff" stroke="#0369a1" stroke-width="1.4"/>
+<path d="M324 1010 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.4"/>
+<text x="429.0" y="1022" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">v_room_vacancy (view)</text>
+<text x="334" y="1050" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_id</text>
+<text x="334" y="1066" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_number</text>
+<text x="334" y="1082" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">capacity</text>
+<text x="334" y="1098" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">occupied_count</text>
+<text x="334" y="1114" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">vacant_beds</text>
+<text x="334" y="1130" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">hostel_code</text>
+</g>
+<text x="36" y="1190" font-size="10" fill="#64748b"># primary key   ~ foreign key   1── one   &lt;── many   - - - identifying/weak relationship   ·  University ERP · M7 BATCH · Dept. of E&amp;TCE</text>
+</svg>

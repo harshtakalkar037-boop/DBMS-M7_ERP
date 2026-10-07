@@ -1,0 +1,110 @@
+erDiagram
+    HOSTELS {
+        string hostel_id PK
+        string hostel_code
+        string name
+        string hostel_type
+        string warden_faculty_id FK
+        string total_rooms
+        string total_beds
+        string occupied_beds
+        decimal rent_per_bed
+        string status
+    }
+    HOSTEL_BLOCKS {
+        string block_id PK
+        string hostel_id FK
+        string block_code
+        string name
+        string floors
+        string status
+    }
+    ROOMS {
+        string room_id PK
+        string hostel_id FK
+        string block_id FK
+        string room_number
+        string floor
+        string room_type
+        string capacity
+        int occupied_count
+        decimal rent_per_bed
+        string status
+    }
+    BEDS {
+        string bed_id PK
+        string room_id FK
+        string bed_code
+        string status
+        string remarks
+    }
+    HOSTEL_APPLICATIONS {
+        string application_id PK
+        int application_no
+        string student_id FK
+        string hostel_id FK
+        string academic_year_id FK
+        string room_type_pref
+        date applied_on
+        string status
+        string reviewed_by FK
+    }
+    ROOM_ALLOCATIONS {
+        string allocation_id PK
+        string student_id FK
+        string bed_id FK
+        string room_id FK
+        string hostel_id FK
+        string academic_year_id FK
+        date allocated_on
+        string allocated_by FK
+        date vacated_on
+        decimal rent_amount
+        string status
+    }
+    ROOM_TRANSFERS {
+        string transfer_id PK
+        string allocation_id FK
+        string from_bed_id FK
+        string to_bed_id FK
+        string reason
+        date transferred_on
+        string approved_by FK
+    }
+    HOSTEL_FEES {
+        string hostel_fee_id PK
+        string allocation_id FK
+        string student_id FK
+        string academic_year_id FK
+        decimal amount
+        decimal paid_amount
+        date due_date
+        string status
+    }
+    STUDENTS {
+        string student_id PK
+        string roll_number
+        string first_name
+        string last_name
+        string gender
+    }
+    V_ROOM_VACANCY__VIEW_ {
+        int room_id
+        string room_number
+        string capacity
+        int occupied_count
+        string vacant_beds
+        string hostel_code
+    }
+    HOSTELS ||--o{ HOSTEL_BLOCKS : "divided into"
+    HOSTELS ||--o{ ROOMS : "relates to"
+    HOSTEL_BLOCKS ||--o{ ROOMS : "relates to"
+    ROOMS ||--o{ BEDS : "furnished with"
+    STUDENTS ||--o{ HOSTEL_APPLICATIONS : "applies"
+    HOSTELS ||--o{ HOSTEL_APPLICATIONS : "relates to"
+    HOSTEL_APPLICATIONS ||--|| ROOM_ALLOCATIONS : "approved →"
+    BEDS ||--o{ ROOM_ALLOCATIONS : "occupies"
+    STUDENTS ||--o{ ROOM_ALLOCATIONS : "relates to"
+    ROOM_ALLOCATIONS ||--o{ ROOM_TRANSFERS : "moves"
+    ROOM_ALLOCATIONS ||--o{ HOSTEL_FEES : "rent bill"
+    ROOMS ||--|| V_ROOM_VACANCY__VIEW_ : "exposed as"

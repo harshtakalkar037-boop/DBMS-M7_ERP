@@ -1,0 +1,106 @@
+erDiagram
+    ROLES {
+        string role_id PK
+        string role_code
+        string role_name
+    }
+    USERS {
+        string user_id PK
+        string role_id FK
+        string email
+        string password_hash
+        string is_active
+    }
+    CATEGORIES {
+        string category_id PK
+        string category_code
+        string name
+    }
+    DEPARTMENTS {
+        string department_id PK
+        string department_code
+        string name
+    }
+    PROGRAMS {
+        string program_id PK
+        string program_code
+        string name
+        string department_id FK
+    }
+    BATCHES {
+        string batch_id PK
+        string batch_code
+        string program_id FK
+        date start_year
+        string strength
+    }
+    ADMISSIONS {
+        string admission_id PK
+        int application_no
+        string program_id FK
+        string category_id FK
+        string marks_10
+        string marks_12
+        string entrance_score
+        date application_date
+        string status
+        string reviewed_by FK
+    }
+    STUDENTS {
+        string student_id PK
+        string user_id FK
+        string roll_number
+        string registration_number
+        string first_name
+        string last_name
+        string department_id FK
+        string program_id FK
+        string batch_id FK
+        string category_id FK
+        decimal current_semester_no
+        string status
+    }
+    ADDRESSES {
+        string address_id PK
+        string student_id FK
+        string address_type
+        string city
+        string state
+        string pincode
+    }
+    GUARDIANS {
+        string guardian_id PK
+        string student_id FK
+        string name
+        string relation
+        string phone
+        string email
+    }
+    STUDENT_DOCUMENTS {
+        string document_id PK
+        string student_id FK
+        string document_type
+        string file_path
+        string verified
+    }
+    STUDENT_STATUS_HISTORY {
+        string history_id PK
+        string student_id FK
+        string old_status
+        string new_status
+        string reason
+        string changed_by FK
+    }
+    ROLES ||--o{ USERS : "relates to"
+    USERS ||--|| STUDENTS : "login"
+    CATEGORIES ||--o{ ADMISSIONS : "reserved under"
+    PROGRAMS ||--o{ ADMISSIONS : "applied to"
+    ADMISSIONS ||--|| STUDENTS : "converted into"
+    DEPARTMENTS ||--o{ STUDENTS : "relates to"
+    PROGRAMS ||--o{ STUDENTS : "relates to"
+    BATCHES ||--o{ STUDENTS : "member of"
+    CATEGORIES ||--o{ STUDENTS : "relates to"
+    STUDENTS ||--o{ ADDRESSES : "relates to"
+    STUDENTS ||--o{ GUARDIANS : "relates to"
+    STUDENTS ||--o{ STUDENT_DOCUMENTS : "relates to"
+    STUDENTS ||--o{ STUDENT_STATUS_HISTORY : "status changes"

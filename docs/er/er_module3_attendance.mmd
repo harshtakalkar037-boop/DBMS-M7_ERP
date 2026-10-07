@@ -1,0 +1,71 @@
+erDiagram
+    COURSE_OFFERINGS {
+        string offering_id PK
+        string subject_id FK
+        string faculty_id FK
+        string semester_id FK
+    }
+    SUBJECTS {
+        string subject_id PK
+        string subject_code
+        string name
+        string credits
+    }
+    CLASS_SESSIONS {
+        string session_id PK
+        string offering_id FK
+        string faculty_id FK
+        string semester_id FK
+        date session_date
+        int session_no
+        string topic
+        string room_number
+        string status
+    }
+    ATTENDANCE {
+        string attendance_id PK
+        string session_id FK
+        string student_id FK
+        string offering_id FK
+        string semester_id FK
+        string status
+        string remarks
+        string marked_by FK
+    }
+    STUDENTS {
+        string student_id PK
+        string roll_number
+        string first_name
+        string last_name
+    }
+    FACULTY {
+        string faculty_id PK
+        string employee_code
+        string first_name
+        string last_name
+    }
+    V_STUDENT_ATTENDANCE_SUMMARY__VIEW_ {
+        int student_id
+        int offering_id
+        string total_classes
+        string present_classes
+        decimal attendance_percentage
+        string status
+    }
+    V_STUDENT_ATTENDANCE_OVERALL__VIEW_ {
+        int student_id
+        string roll_number
+        string total_classes
+        string attended_classes
+        decimal overall_percentage
+        string attendance_status
+    }
+    SUBJECTS ||--o{ COURSE_OFFERINGS : "relates to"
+    FACULTY ||--o{ COURSE_OFFERINGS : "relates to"
+    COURSE_OFFERINGS ||--o{ CLASS_SESSIONS : "conducts"
+    FACULTY ||--o{ CLASS_SESSIONS : "takes"
+    CLASS_SESSIONS ||--o{ ATTENDANCE : "records"
+    STUDENTS ||--o{ ATTENDANCE : "relates to"
+    COURSE_OFFERINGS ||--o{ ATTENDANCE : "relates to"
+    ATTENDANCE }o--|| V_STUDENT_ATTENDANCE_SUMMARY__VIEW_ : "aggregated"
+    ATTENDANCE }o--|| V_STUDENT_ATTENDANCE_OVERALL__VIEW_ : "aggregated"

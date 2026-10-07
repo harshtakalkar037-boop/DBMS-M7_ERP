@@ -1,0 +1,115 @@
+# =============================================================================
+# University ERP — full stack in one command
+# =============================================================================
+#   docker compose up -d --build      # start everything
+#   docker compose logs -f api        # follow the API
+#   docker compose down               # stop
+#   docker compose down -v            # stop and DELETE the database volume
+#
+# Services
+#   db     MariaDB 11.8  (MySQL-8 compatible) — loads database/01..08 on first boot
+#   api    Express + TypeScript API on :8080   → http://localhost:8080/api/v1/health
+#   web    Vite dev server on :5173            → http://localhost:5173
+#   mongo  optional event store (profile: mongo) — nothing depends on it
+# =============================================================================
+
+name: university-erp
+
+services:
+  db:
+    image: mariadb:11.8
+    container_name: erp-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root_pass_2026}
+      MARIADB_DATABASE: ${DB_NAME:-university_erp}
+      MARIADB_USER: ${DB_USER:-erp_user}
+      MARIADB_PASSWORD: ${DB_PASSWORD:-erp_pass_2026}
+      MARIADB_AUTO_UPGRADE: '1'
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --max-connections=200
+      - --innodb-buffer-pool-size=512M
+      - --sql-mode=STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION
+    ports:
+      - '${DB_PORT:-3306}:3306'
+    volumes:
+      - db-data:/var/lib/mysql
+      # Files run in filename order, so the whole schema + seed + logic loads
+      # before the API starts (see the healthcheck below).
+      - ./database:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'healthcheck.sh --connect --innodb_initialized || exit 1']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: erp-api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: 8080
+      API_PREFIX: /api/v1
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: ${DB_USER:-erp_user}
+      DB_PASSWORD: ${DB_PASSWORD:-erp_pass_2026}
+      DB_NAME: ${DB_NAME:-university_erp}
+      DB_CONNECTION_LIMIT: '15'
+      JWT_SECRET: ${JWT_SECRET:-please-change-this-secret}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-8h}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-please-change-this-refresh-secret}
+      JWT_REFRESH_EXPIRES_IN: ${JWT_REFRESH_EXPIRES_IN:-7d}
+      BCRYPT_ROUNDS: '10'
+      CORS_ORIGIN: http://localhost:5173,http://localhost:8080
+      MONGODB_URI: ${MONGODB_URI:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      - '${API_PORT:-8080}:8080'
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'node -e "fetch(\'http://127.0.0.1:8080/api/v1/health\').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"']
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # the browser reaches the API through the Vite proxy, so this is the
+        # container name of the API service, never localhost
+        VITE_API_TARGET: http://api:8080
+    container_name: erp-web
+    restart: unless-stopped
+    environment:
+      VITE_API_TARGET: http://api:8080
+    ports:
+      - '${WEB_PORT:-5173}:5173'
+    depends_on:
+      api:
+        condition: service_healthy
+
+  mongo:
+    image: mongo:7
+    container_name: erp-mongo
+    restart: unless-stopped
+    profiles: ['mongo']          # docker compose --profile mongo up -d
+    ports:
+      - '${MONGO_PORT:-27017}:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  db-data:
+  mongo-data:

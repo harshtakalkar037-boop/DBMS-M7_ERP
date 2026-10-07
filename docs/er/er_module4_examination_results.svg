@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1146" height="1280" viewBox="0 0 1146 1280" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="36" y="34" font-size="19" font-weight="700" fill="#0f172a">Module 4 — Examination &amp; Results</text>
+<text x="36" y="54" font-size="11.5" fill="#64748b">Registration is screened by sp_register_student_for_exam (attendance + dues); marks roll up to results; calculate_student_cgpa() recomputes CGPA; RANK/DENSE_RANK produce toppers.</text>
+<line x1="36" y1="64" x2="1110" y2="64" stroke="#cbd5e1" stroke-width="1"/>
+<g>
+<path d="M141.0 294.0 L141.0 437.0 L141.0 437.0 L141.0 580.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M135.0 284 L147.0 284" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M141.0 580 L136.0 592 M141.0 580 L146.0 592 M141.0 580 L141.0 592" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="104.5" y="428.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="141.0" y="440.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">timetable</text>
+</g>
+<g>
+<path d="M246.0 185.0 L285.0 185.0 L285.0 437.0 L324.0 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 179.0 L256 191.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 437.0 L312 432.0 M324 437.0 L312 442.0 M324 437.0 L312 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="234.5" y="302.0" width="101" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="285.0" y="314.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">registrations</text>
+</g>
+<g>
+<path d="M900.0 869.0 L717.0 869.0 L717.0 437.0 L534.0 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 863.0 L890 875.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M534 437.0 L546 432.0 M534 437.0 L546 442.0 M534 437.0 L546 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M246.0 681.0 L285.0 681.0 L285.0 437.0 L324.0 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M256 675.0 L256 687.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M324 437.0 L312 432.0 M324 437.0 L312 442.0 M324 437.0 L312 437.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="248.5" y="550.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="285.0" y="562.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">for paper</text>
+</g>
+<g>
+<path d="M534.0 437.0 L573.0 437.0 L573.0 429.0 L612.0 429.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M544 431.0 L544 443.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M602 423.0 L602 435.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="547.0" y="424.0" width="52" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="436.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">scored</text>
+</g>
+<g>
+<path d="M900.0 145.0 L861.0 145.0 L861.0 429.0 L822.0 429.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 139.0 L890 151.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M822 429.0 L834 424.0 M822 429.0 L834 434.0 M822 429.0 L834 429.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="824.5" y="278.0" width="73" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="861.0" y="290.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">graded by</text>
+</g>
+<g>
+<path d="M429.0 546.0 L429.0 681.0 L717.0 681.0 L717.0 816.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M429.0 546 L424.0 534 M429.0 546 L434.0 534 M429.0 546 L429.0 534" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M711.0 826 L723.0 826" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="540.0" y="672.0" width="66" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="684.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">rolls up</text>
+</g>
+<g>
+<path d="M900.0 869.0 L861.0 869.0 L861.0 917.0 L822.0 917.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M890 863.0 L890 875.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M822 917.0 L834 912.0 M822 917.0 L834 922.0 M822 917.0 L834 917.0" fill="none" stroke="#64748b" stroke-width="1.3"/>
+</g>
+<g>
+<path d="M429.0 546.0 L429.0 799.0 L429.0 799.0 L429.0 1052.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M429.0 546 L424.0 534 M429.0 546 L434.0 534 M429.0 546 L429.0 534" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M423.0 1062 L435.0 1062" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="385.5" y="790.0" width="87" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="429.0" y="802.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">screened by</text>
+</g>
+<g>
+<path d="M429.0 546.0 L429.0 799.0 L717.0 799.0 L717.0 1052.0" fill="none" stroke="#64748b" stroke-width="1.3" stroke-dasharray="6 4"/>
+<path d="M423.0 536 L435.0 536" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<path d="M711.0 1062 L723.0 1062" fill="none" stroke="#64748b" stroke-width="1.3"/>
+<rect x="547.0" y="790.0" width="52" height="16" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="573.0" y="802.0" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="9.5" fill="#475569">prints</text>
+</g>
+<g>
+<rect x="36" y="76" width="210" height="218" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M36 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="141.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">exams</text>
+<text x="46" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">exam_id</text>
+<text x="46" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">       </text>
+<text x="46" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exam_code</text>
+<text x="46" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">name</text>
+<text x="46" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exam_type</text>
+<text x="46" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">academic_year_id</text>
+<text x="46" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+<text x="46" y="218" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">registration_start</text>
+<text x="46" y="234" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">registration_end</text>
+<text x="46" y="250" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">min_attendance_required</text>
+<text x="46" y="266" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">result_published</text>
+<text x="46" y="282" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="36" y="580" width="210" height="202" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M36 586 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="141.0" y="598" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">exam_schedules</text>
+<text x="46" y="626" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">schedule_id</text>
+<text x="46" y="629" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">           </text>
+<text x="46" y="642" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">exam_id</text>
+<text x="46" y="658" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">subject_id</text>
+<text x="46" y="674" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">program_id</text>
+<text x="46" y="690" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exam_date</text>
+<text x="46" y="706" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">start_time</text>
+<text x="46" y="722" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">end_time</text>
+<text x="46" y="738" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_number</text>
+<text x="46" y="754" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">max_marks</text>
+<text x="46" y="770" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">invigilator_id</text>
+</g>
+<g>
+<rect x="324" y="328" width="210" height="218" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M324 334 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="429.0" y="346" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">exam_registrations</text>
+<text x="334" y="374" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">registration_id</text>
+<text x="334" y="377" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">               </text>
+<text x="334" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">exam_id</text>
+<text x="334" y="406" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="334" y="422" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">offering_id</text>
+<text x="334" y="438" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">schedule_id</text>
+<text x="334" y="454" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">attendance_percentage</text>
+<text x="334" y="470" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_eligible</text>
+<text x="334" y="486" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">eligibility_reason</text>
+<text x="334" y="502" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exemption_granted</text>
+<text x="334" y="518" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">hall_ticket_no</text>
+<text x="334" y="534" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">status</text>
+</g>
+<g>
+<rect x="612" y="328" width="210" height="202" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M612 334 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="717.0" y="346" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">marks</text>
+<text x="622" y="374" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">mark_id</text>
+<text x="622" y="377" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">       </text>
+<text x="622" y="390" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">registration_id</text>
+<text x="622" y="406" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">marks_obtained</text>
+<text x="622" y="422" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">max_marks</text>
+<text x="622" y="438" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">percentage</text>
+<text x="622" y="454" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">grade</text>
+<text x="622" y="470" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">grade_points</text>
+<text x="622" y="486" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_absent</text>
+<text x="622" y="502" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_pass</text>
+<text x="622" y="518" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">entered_by</text>
+</g>
+<g>
+<rect x="900" y="76" width="210" height="138" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M900 82 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="1005.0" y="94" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">grades</text>
+<text x="910" y="122" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">grade_id</text>
+<text x="910" y="125" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">        </text>
+<text x="910" y="138" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">grade_code</text>
+<text x="910" y="154" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">min_percentage</text>
+<text x="910" y="170" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">max_percentage</text>
+<text x="910" y="186" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">grade_points</text>
+<text x="910" y="202" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_pass</text>
+</g>
+<g>
+<rect x="612" y="816" width="210" height="202" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M612 822 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="717.0" y="834" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">results</text>
+<text x="622" y="862" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">result_id</text>
+<text x="622" y="865" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">         </text>
+<text x="622" y="878" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">student_id</text>
+<text x="622" y="894" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">semester_id</text>
+<text x="622" y="910" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#b45309" font-style="italic">exam_id</text>
+<text x="622" y="926" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">sgpa</text>
+<text x="622" y="942" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">cgpa</text>
+<text x="622" y="958" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">total_credits</text>
+<text x="622" y="974" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">earned_credits</text>
+<text x="622" y="990" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">backlog_count</text>
+<text x="622" y="1006" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">result_status</text>
+</g>
+<g>
+<rect x="900" y="816" width="210" height="106" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.4"/>
+<path d="M900 822 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.4"/>
+<text x="1005.0" y="834" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a">students</text>
+<text x="910" y="862" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" font-weight="700">student_id</text>
+<text x="910" y="865" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#0f172a" text-decoration="underline">          </text>
+<text x="910" y="878" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="910" y="894" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">first_name</text>
+<text x="910" y="910" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">last_name</text>
+</g>
+<g>
+<rect x="324" y="1052" width="210" height="138" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M324 1058 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="429.0" y="1070" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">v_exam_eligibility (view)</text>
+<text x="334" y="1098" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">student_id</text>
+<text x="334" y="1114" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">offering_id</text>
+<text x="334" y="1130" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">attendance_percentage</text>
+<text x="334" y="1146" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">required_percentage</text>
+<text x="334" y="1162" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">outstanding_dues</text>
+<text x="334" y="1178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">is_eligible</text>
+</g>
+<g>
+<rect x="612" y="1052" width="210" height="154" rx="6" fill="#ffffff" stroke="#be123c" stroke-width="1.4"/>
+<path d="M612 1058 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v20 h-210 z" fill="#ffe4e6" stroke="#be123c" stroke-width="1.4"/>
+<text x="717.0" y="1070" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#be123c">v_exam_hall_ticket (view)</text>
+<text x="622" y="1098" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">registration_id</text>
+<text x="622" y="1114" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">roll_number</text>
+<text x="622" y="1130" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exam_code</text>
+<text x="622" y="1146" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">subject_code</text>
+<text x="622" y="1162" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">exam_date</text>
+<text x="622" y="1178" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">room_number</text>
+<text x="622" y="1194" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#334155">hall_ticket_no</text>
+</g>
+<text x="36" y="1254" font-size="10" fill="#64748b"># primary key   ~ foreign key   1── one   &lt;── many   - - - identifying/weak relationship   ·  University ERP · M7 BATCH · Dept. of E&amp;TCE</text>
+</svg>

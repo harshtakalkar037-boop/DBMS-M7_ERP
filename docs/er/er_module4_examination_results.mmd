@@ -1,0 +1,104 @@
+erDiagram
+    EXAMS {
+        string exam_id PK
+        string exam_code
+        string name
+        string exam_type
+        string academic_year_id FK
+        string semester_id FK
+        string registration_start
+        string registration_end
+        string min_attendance_required
+        string result_published
+        string status
+    }
+    EXAM_SCHEDULES {
+        string schedule_id PK
+        string exam_id FK
+        string subject_id FK
+        string program_id FK
+        date exam_date
+        string start_time
+        string end_time
+        string room_number
+        string max_marks
+        string invigilator_id FK
+    }
+    EXAM_REGISTRATIONS {
+        string registration_id PK
+        string exam_id FK
+        string student_id FK
+        string offering_id FK
+        string schedule_id FK
+        decimal attendance_percentage
+        string is_eligible
+        string eligibility_reason
+        string exemption_granted
+        int hall_ticket_no
+        string status
+    }
+    MARKS {
+        string mark_id PK
+        string registration_id FK
+        string marks_obtained
+        string max_marks
+        decimal percentage
+        string grade
+        decimal grade_points
+        string is_absent
+        string is_pass
+        string entered_by FK
+    }
+    GRADES {
+        string grade_id PK
+        string grade_code
+        decimal min_percentage
+        decimal max_percentage
+        decimal grade_points
+        string is_pass
+    }
+    RESULTS {
+        string result_id PK
+        string student_id FK
+        string semester_id FK
+        string exam_id FK
+        decimal sgpa
+        decimal cgpa
+        string total_credits
+        string earned_credits
+        int backlog_count
+        string result_status
+    }
+    STUDENTS {
+        string student_id PK
+        string roll_number
+        string first_name
+        string last_name
+    }
+    V_EXAM_ELIGIBILITY__VIEW_ {
+        int student_id
+        int offering_id
+        decimal attendance_percentage
+        decimal required_percentage
+        string outstanding_dues
+        string is_eligible
+    }
+    V_EXAM_HALL_TICKET__VIEW_ {
+        int registration_id
+        string roll_number
+        string exam_code
+        string subject_code
+        date exam_date
+        string room_number
+        int hall_ticket_no
+    }
+    EXAMS ||--o{ EXAM_SCHEDULES : "timetable"
+    EXAMS ||--o{ EXAM_REGISTRATIONS : "registrations"
+    STUDENTS ||--o{ EXAM_REGISTRATIONS : "relates to"
+    EXAM_SCHEDULES ||--o{ EXAM_REGISTRATIONS : "for paper"
+    EXAM_REGISTRATIONS ||--|| MARKS : "scored"
+    GRADES ||--o{ MARKS : "graded by"
+    EXAM_REGISTRATIONS }o--|| RESULTS : "rolls up"
+    STUDENTS ||--o{ RESULTS : "relates to"
+    EXAM_REGISTRATIONS }o--|| V_EXAM_ELIGIBILITY__VIEW_ : "screened by"
+    EXAM_REGISTRATIONS ||--|| V_EXAM_HALL_TICKET__VIEW_ : "prints"
